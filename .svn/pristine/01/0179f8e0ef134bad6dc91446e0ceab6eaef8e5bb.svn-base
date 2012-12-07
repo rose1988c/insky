@@ -1,0 +1,15 @@
+<div class="topchannel">
+	<div class="item">
+		<div>
+			<a href="<?php echo URLS::absolute();?>">1</a>
+		</div>
+	
+		<div class="home">
+			<a onclick="AddFavorite(window.location,document.title);return false;" href="javascript:void(0);"><b></b>收藏</a>
+			<a target="__blank" class="weibo" title="陈韵文C" href="http://www.weibo.com/349252963/">关注我</a>
+			<?php if ($auth) { echo ' | <font style="color:#0088DD;">' . $auth . '</font><a href="javascript:void(0);" id="loginout" rel="' . $auth . '">Exit</a>'; } else {?>
+			<a href="<?php echo $base . '/index.php/account/login/';?>">login</a>
+			<?php }?>
+		</div>
+	</div>
+</div>

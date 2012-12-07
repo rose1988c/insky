@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<div id="wpppp"
+	style="clear: both; overflow: hidden; width: 848px; height: 480px; position: relative; margin: 0 auto;">
+<div
+	style="width: 848px; height: 480px; overflow: hidden; position: relative; background-color: rgb(0, 0, 0);"
+	id="XL_CLOUD_VOD_PLAYER"><embed width="100%" height="100%"
+	pluginspage="http://www.macromedia.com/go/getflashplayer"
+	wmode="transparent" allowfullscreen="true" allowscriptaccess="always"
+	quality="high" bgcolor="#000000" name="PlayerCtrl" id="PlayerCtrl"
+	src="http://script.apbest.info/rc/3.swf?movieType=undefined&amp;v=2.0"
+	type="application/x-shockwave-flash">
+	<script type="text/javascript" charset="utf-8" src="http://vodpj.tk/script/js/player.js"></script>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+@CHARSET "UTF-8";
+
+/*weibo icon*/
+.weibo{
+    background: url(/application/www/img/ico_expand.png) no-repeat scroll 0 -40px transparent;
+    padding: 2px 0 2px 20px;
+}
+
+/*table*/
+.urlbox-lists table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.urlbox-lists table th {
+    border-bottom: 1px solid #DFDFDF;
+    color: #666666;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: right;
+}
+.urlbox-lists table td {
+    border: 1px solid #DFDFDF;
+    color: #333333;
+    height: 31px;
+    line-height: 30px;
+    text-indent: 15px;
+}
+.urlbox-lists a:link, .urlbox-lists a:visited {
+    color: #222;
+    text-decoration: none;
+}
+
+
+/*link*/
+.pages {
+    font: 1em Arial,Helvetica,sans-serif;
+    margin: 1em 0;
+    padding: 0.5em 0 1.5em;
+}
+.pages a, .pages span {
+    border: 1px solid #FFFFFF;
+    color: #FF6633;
+    margin: 0 0.1em 0.2em 0;
+    padding: 0.2em 0.4em;
+}
+.pages a.current {
+    background-color: #FF6633;
+    border: 1px solid #EEEEEE;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.pages a:link, .pages a:visited {
+    border: 1px solid #EEEEEE;
+    text-decoration: none;
+}
+.pages a:hover, .pages a:active {
+    background-color: #FF6633;
+    color: #FFFFFF;
+}
+
+h2{
+	font-family:"Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu;
+	font-size:11px;
+}

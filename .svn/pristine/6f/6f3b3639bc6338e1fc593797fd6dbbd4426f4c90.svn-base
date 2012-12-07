@@ -1,0 +1,103 @@
+<?php
+echo $header;
+$this->load->helper('array');
+$this->load->helper('url');
+?>
+
+	<body>
+		<!-- top -->
+		<div class="topchannel">
+			<div class="item">
+				<div class="home">
+					<a onclick="AddFavorite(window.location,document.title);return false;" href="javascript:void(0);"><b></b>收藏</a>
+					<a target="__blank" class="weibo" title="陈韵文C" href="http://www.weibo.com/349252963/">关注我</a>
+					<?php if ($auth) { echo ' | <font style="color:#0088DD;">' . $auth . '</font><a href="javascript:void(0);" id="loginout" rel="' . $auth . '">Exit</a>'; } else {?>
+					<a href="<?php echo $base . '/index.php/account/login/';?>">login</a>
+					<?php }?>
+				</div>
+			</div>
+		</div>
+
+		<!-- body -->
+		<div class="topguid_list">
+			<div class="item">
+				<h2 class="title"><span class="t"><b class="icon"><img src="/application/www/img/mzdh.png" style="width: 14px; height: 14px;"></b>名站导航 </span></h2>
+					<ul>
+						<!-- type 名站导航(9) -->
+						<?php shuffle($commend_urls);?>
+						<?php foreach ($commend_urls as $result) {?>
+						<li>
+							<a rel="external nofollow" target="_blank" title="<?php echo $result->title;?>" href="<?php echo $result->url;?>" class="pic" >
+								<img width="51" height="51" alt="<?php echo $result->title;?>" src="<?php echo $result->icon_url;?>"><b class="cover"></b>
+						    </a>
+						    <p>
+						    	<a rel="external nofollow" target="_blank" title="<?php echo $result->title;?>" href="<?php echo $result->url;?>"><?php echo $result->title;?></a><span>
+						    </p>
+						</li>
+						<?php }?>
+					</ul>
+			</div>
+
+			<?php foreach ($types as $key => $type) {?>
+			<?php if ($type->type_id == 8 || $type->type_id == 9 ) {?>
+			<?php continue;?>
+			<?php }?>
+			<div class="itemsimple clearfix">
+				<h2 class="title"><span class="t"><b class="icon"><img src="/application/www/img/mzdh.png" style="width: 14px; height: 14px;"></b><?php echo $type->name;?></span></h2>
+				<ul>
+					<?php
+						foreach (arrayfitter_fav($urls, $type->type_id) as $result) {
+					?>
+					<li>
+						<div class="divcell">
+					    	<a class="icon" rel="external nofollow" target="_blank" title="<?php echo $result->title;?>" href="<?php echo $result->url;?>" ><img src="<?php if (!empty($result->icon_url)) { echo $result->icon_url;} else {echo 'http://insky.sinaapp.com/favicon.ico';} ?>" /><?php echo $result->title;?></a>
+						</div>
+					</li>
+					<?php }?>
+				</ul>
+			</div>
+			<?php }?>
+
+		</div>
+<script type="text/javascript">
+			function AddFavorite(sURL, sTitle) {
+			    try
+			    {
+			        window.external.addFavorite(sURL, sTitle);
+			    }
+			    catch (e)
+			    {
+			        try
+			        {
+			            window.sidebar.addPanel(sTitle, sURL, "");
+			        }
+			        catch (e)
+			        {
+			            alert("加入收藏失败，请使用Ctrl+D进行添加");
+			        }
+			    }
+			}
+
+
+	        $(document).ready(function() {
+            /* -------*/
+
+	        var url = "<?php echo $base;?>" + '/index.php/account/loginout/';
+
+	            $("img").bind("error",function(){
+	        this.src="http://insky.sinaapp.com/favicon.ico";
+	        });
+
+			$("#loginout").click(function(){
+				var username = $(this).attr('rel');
+				$.post(url,{username:username},function(data){
+					if (data == 'true') {
+						window.location.reload();
+					}
+				},'json');
+			});
+	        });
+	</script>
+	<script src="http://app.baidu.com/static/appstore/monitor.st"></script>
+	</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+http://scraphacker.com/category/inspiration/
+
+    top
+    <ul>
+        <li>
+            1.modules ->  'cat_menu'                => $this->load->view('layout/top.tpl.php', array('current' => 'Favorites','base'=> $this->config->item('base_url'), 'auth' => $auth ), TRUE),
+        </li>
+        <li>2.tpl    echo $cat_menu;</li>
+        <li>3.modules -> css $this->config->item('css_cat_oh_nav1')</li>
+    </ul>
+</body>
+</html>

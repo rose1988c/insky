@@ -1,0 +1,194 @@
+@CHARSET "UTF-8";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    border: 0 none;
+    font: 12px/ 20px normal Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+	color: #4F5155;
+}
+input, button, textarea {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    min-width: 960px;
+}
+
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+* html .clearfix {
+    height: 1%;
+}
+.clearfix {
+    display: inline-block;
+}
+.clearfix {
+    display: block;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+a.action {
+    color: #DD0000;
+    text-decoration: underline;
+}
+a.danger {
+    color: #CC0000;
+}
+a:active {
+    outline: medium none;
+}
+
+a {
+	color: #003399;
+	background-color: transparent;
+	font-weight: normal;
+    text-decoration: none;
+}
+
+h1 {
+	color: #444;
+	background-color: transparent;
+	border-bottom: 1px solid #D0D0D0;
+	font-size: 19px;
+	font-weight: normal;
+	margin: 0 0 14px 0;
+	padding: 14px 15px 10px 15px;
+}
+
+code {
+	font-family: Consolas, Monaco, Courier New, Courier, monospace;
+	font-size: 12px;
+	background-color: #f9f9f9;
+	border: 1px solid #D0D0D0;
+	color: #002166;
+	display: block;
+	margin: 14px 10px 14px 10px;
+	padding: 12px 10px 12px 10px;
+}
+
+pre {
+	font-family: Consolas, Monaco, Courier New, Courier, monospace;
+	font-size: 12px;
+
+}
+
+#body {
+	margin: 0 15px 0 15px;
+}
+
+p.footer {
+	text-align: right;
+	font-size: 11px;
+	border-top: 1px solid #D0D0D0;
+	line-height: 32px;
+	padding: 0 10px 0 10px;
+	margin: 20px 0 0 0;
+}
+
+#container {
+	margin: 10px;
+	border: 1px solid #D0D0D0;
+	-webkit-box-shadow: 0 0 8px #D0D0D0;
+}
+
+
+/*-----------------index----------------*/
+#index-goin {
+	position:fixed; *position:absolute; width:100px; height:100px; top:50%; left:50%; margin:-50px 0 0 -50px;
+}
+
+
+/*上传*/
+.sc {
+    height: 27px;
+    margin: 10px;
+    position: relative;
+}
+
+#upload a:hover, #upload a:active,#upload a {
+	float: left;
+	margin-top: 4px;
+	width: 79px;
+	height: 26px;
+	background: url(application/www/img/cat-button.gif) no-repeat 0 0;
+	text-align: center;
+	line-height: 26px;
+	color: #333;
+	display: block;
+	text-decoration: none;
+}
+
+#upload input.input-sc {
+    border: 1px solid #7F9DB9;
+    float: left;
+    height: 24px;
+    margin: 4px 0 0;
+    vertical-align: middle;
+    width: 128px;
+}
+
+#upload .scBoxa {
+    float: left;
+    margin-left: 15px;
+    padding-top: 5px;
+}
+
+#upload .sc p {
+    color: #686868;
+    float: left;
+}
+#upload .rigBox p {
+    color: #CBCBCB;
+    padding-top: 10px;
+}
+p {
+    line-height: 1.5em;
+}
+
+
+input.button-y {
+    background: url(application/www/img/btn-y.gif) repeat-x scroll left top transparent;
+    border: medium none;
+    cursor: pointer;
+    font-size: 12px;
+    height: 25px;
+    margin-right: 6px;
+    padding: 0 2px !important;
+    width: 63px;
+}
+
+input.input-sc {
+    border: 1px solid #ccc;
+    height: 24px;
+    vertical-align: middle;
+    width: 128px;
+}
+
+div.block {
+    border: 1px solid #D6D6D6;
+	width:540px;
+	margin:20px;
+}
+
+.urlsc{
+	
+}
+
+.urlsc ul {
+	clear: both;
+    display: block;
+    height: 130px;
+}
+
+.urlsc ul li {
+   padding: 10px;
+   width: 526px;
+}

@@ -1,0 +1,203 @@
+@CHARSET "UTF-8";
+
+.topchannel {
+	position: relative;
+	height: 37px;
+	line-height: 30px;
+	background: #f0f0f0 url(../../img/t_bg.png) repeat-x;
+	z-index: 100;
+	margin-bottom: 10px;
+}
+
+.topchannel .item {
+	position: relative;
+	width: 970px;
+	margin: 0 auto;
+}
+
+.topchannel .item .menu,.topchannel .item .menu * {
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+}
+
+.topchannel .item .menu {
+	line-height: 1;
+}
+
+.topchannel .item .menu ul {
+	margin: 0;
+	padding: 0;
+}
+
+.topchannel .item .menu ul ul,.topchannel .item ul.menu ul {
+	position: absolute;
+	top: -9999px;
+	width: 160px;
+}
+
+.topchannel .item .menu ul li ul li,.topchannel .item ul.menu ul li {
+	margin: 0;
+	width: 100%;
+}
+
+.topchannel .item .menu li:hover {
+	visibility: inherit;
+}
+
+.topchannel .item .menu li {
+	display: inline-block;
+	float: left;
+	position: relative;
+}
+
+.topchannel .item .menu a {
+	display: inline-block;
+	position: relative;
+}
+
+.topchannel .item .menu li:hover ul,.topchannel .item .menu li.sfHover ul
+	{
+	left: 0;
+	top: 30px;
+	z-index: 99;
+}
+
+.topchannel .item ul.menu li:hover li ul,.topchannel .item ul.menu li.sfHover li ul
+	{
+	top: -9999px;
+}
+
+.topchannel .item ul.menu li li:hover ul,.topchannel .item ul.menu li li.sfHover ul
+	{
+	left: 160px;
+	top: 0;
+}
+
+.topchannel .item ul.menu li li:hover li ul,.topchannel .item ul.menu li li.sfHover li ul
+	{
+	top: -9999px;
+}
+
+.topchannel .item ul.menu li li li:hover ul,.topchannel .item ul.menu li li li.sfHover ul
+	{
+	left: 160px;
+	top: 0;
+}
+
+.topchannel .item .menu .current_page_item a,.topchannel .item .menu .current_page_ancestor a,.topchannel .item .menu .current-menu-item a,.topchannel .item .menu .current-cat a
+	{
+	background: none repeat scroll 0 0 #333333;
+	border-left: 1px solid #333333;
+	border-right: 1px solid #333333;
+	color: #FFFFFF;
+}
+
+.topchannel .item .menu li .current_page_item a,.topchannel .item .menu li .current_page_item a:hover,.topchannel .item .menu li .current-menu-item a,.topchannel .item .menu li .current-menu-item a:hover,.topchannel .item .menu li .current-cat a,.topchannel .item .menu li .current-cat a:hover
+	{
+	background: none repeat scroll 0 0 #333333 !important;
+	border-left: medium none;
+	border-right: medium none;
+	color: #FFFFFF !important;
+}
+
+.topchannel .item .menu {
+	float: left;
+	margin-bottom: 0;
+}
+
+.topchannel .item .menu a {
+	background: none repeat scroll 0 0 transparent;
+	border-left: 1px solid #FFFFFF;
+	border-right: 1px solid #DDDDDD;
+	color: #666666;
+	font-weight: bold;
+	letter-spacing: 0.1px;
+	line-height: 34px;
+	margin: 0;
+	padding: 0 12px;
+	text-decoration: none;
+}
+
+.topchannel .item .menu li li a {
+	background: none repeat scroll 0 0 #F5F5F5 !important;
+	border-left: medium none !important;
+	border-right: medium none !important;
+	color: #666666 !important;
+	display: block;
+	font-size: 11px;
+	font-weight: bold;
+	letter-spacing: 0;
+	line-height: 30px;
+	margin: 0;
+	padding: 0 10px;
+	text-decoration: none;
+	text-shadow: none;
+	text-transform: none;
+}
+
+.topchannel .item .menu li,.topchannel .item .menu li li,.topchannel .item .menu li li li
+	{
+	background: none repeat scroll 0 0 transparent;
+	margin: 0;
+	padding: 0;
+}
+
+.topchannel .item .menu li:hover,.topchannel .item .menu li.sfHover {
+	margin: 0;
+	padding: 0;
+}
+
+.topchannel .item .menu a:focus,.topchannel .item .menu a:hover,.topchannel .item .menu a:active
+	{
+	background: none repeat scroll 0 0 #333333;
+	border-left: 1px solid #333333;
+	border-right: 1px solid #333333;
+	color: #FFFFFF;
+	outline: 0 none;
+}
+
+.topchannel .item .menu li li:hover,.topchannel .item .menu li li.sfHover
+	{
+	margin: 0;
+	padding: 0;
+}
+
+.topchannel .item .menu li li a:focus,.topchannel .item .menu li li a:hover,.topchannel .item .menu li li a:active
+	{
+	background: none repeat scroll 0 0 #EEEEEE !important;
+	border: medium none;
+	color: #333333 !important;
+	outline: 0 none;
+}
+
+.topchannel .item .home {
+	position: absolute;
+	top: 3px;
+	right: 0;
+	color: #DCDCDC;
+}
+
+.topchannel .item .home b {
+	display: block;
+	width: 16px;
+	height: 12px;
+	background: url(../../img/coll.png) no-repeat;
+	float: left;
+	margin-top: 9px;
+}
+
+.topchannel .item .home a {
+	color: #999999;
+	margin: 0 2px;
+}
+
+.topchannel .item .home a:hover {
+	color: #1C8BD9;
+}
+
+.topchannel .item .weibo {
+	background: url(/application/www/img/ico_expand.png) no-repeat scroll 0
+		-40px transparent;
+	padding: 2px 0 2px 20px;
+}

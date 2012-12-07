@@ -1,0 +1,231 @@
+@CHARSET "UTF-8";
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, code, em, img, q, small, strong, dd, dl, dt, li, ol, ul, fieldset, form, label, table, tbody, tr, th, td, input {
+    margin: 0;
+    padding: 0;
+}
+body {
+    cursor: default;
+    font-family: "Microsoft Yahei","微软雅黑",Tahoma,Arial,Helvetica,STHeiti;
+    font-size: 12px;
+}
+html.hasFontSmoothing-false body {
+    font-family: Tahoma,Arial,Helvetica,STHeiti;
+}
+a img, *:link img, *:visited img {
+    border: 0 none;
+}
+table {
+    border-collapse: collapse;
+}
+ul {
+    list-style: none outside none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+}
+html {
+    background: url(../../img/account/htmlbg.$5106.png) repeat scroll 0 0 transparent;
+    overflow-y: scroll;
+}
+.clearfix:after, #content:after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+#content:after {
+    height: auto;
+}
+.clearfix, #content {
+}
+.clear {
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
+body {
+    background: url(../../img/account/reg-promote-header.$5206.png) repeat-x scroll 0 -14px transparent;
+    min-height: 410px;
+    overflow: hidden;
+}
+#switcher {
+    position: absolute;
+    right: 0;
+    top: 23px;
+}
+#switcher a {
+    background: url(../../img/account/startpage-1231.$5106.png) no-repeat scroll 0 0 transparent;
+    color: #5F6060;
+    display: block;
+    font-size: 16px;
+    height: 44px;
+    line-height: 44px;
+    outline: medium none;
+    text-align: center;
+    text-decoration: none;
+    width: 90px;
+}
+#switcher a:hover {
+    background-position: 0 -55px;
+}
+.input-wrap {
+    background: url(../../img/account/startpage-1231.$5106.png) no-repeat scroll -280px -52px transparent;
+    float: left;
+    height: 52px;
+    margin-right: 5px;
+    position: relative;
+    width: 218px;
+}
+.input-wrap label, .input-wrap .blogurl-address {
+    color: #ABACAD;
+    font-size: 16px;
+    height: 52px;
+    left: 32px;
+    line-height: 52px;
+    margin: 0 10px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+    width: 170px;
+    z-index: 10;
+}
+.input-wrap.focus {
+    background-position: -280px 0;
+}
+.input-wrap.focus label {
+    color: #8F8F8F;
+}
+.input-wrap.error {
+    background-position: 0 -196px;
+    color: #AC0000;
+}
+.input-wrap .tip {
+    background: url(../../img/account/startpage-1231.$5106.png) no-repeat scroll -300px -130px transparent;
+    color: #8F8958;
+    font-size: 12px;
+    height: 36px;
+    left: 10px;
+    line-height: 36px;
+    position: absolute;
+    text-align: center;
+    top: 50px;
+    width: 197px;
+    z-index: 0;
+}
+.input-wrap .input-icon {
+    background: url(../../img/account/startpage-1231.$5106.png) no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 16px;
+    margin: 18px 0 0 15px;
+    width: 16px;
+}
+#input-reg-email .input-icon, #input-login-email .input-icon {
+    background-position: 0 -197px;
+}
+#input-reg-email.focus .input-icon, #input-login-email.focus .input-icon {
+    background-position: 0 -147px;
+}
+#input-reg-pwd .input-icon, #input-login-pwd .input-icon {
+    background-position: 0 -300px;
+}
+#input-reg-pwd.focus .input-icon, #input-login-pwd.focus .input-icon {
+    background-position: 0 -250px;
+}
+#input-reg-blogurl .input-icon {
+    background-position: 0 -400px;
+}
+#input-reg-blogurl.focus .input-icon {
+    background-position: 0 -350px;
+}
+div.address-hide {
+    visibility: hidden;
+}
+#blogurl {
+    font-size: 16px;
+    padding-right: 1px;
+    visibility: hidden;
+    white-space: nowrap;
+}
+#input-login-email label, #input-login-pwd label {
+    text-indent: -9999px;
+}
+.input-text {
+    background: url(../../img/account/blank.$166.png) repeat scroll 0 0 transparent;
+    border: 0 none;
+    color: #8F8F8F;
+    font-family: "Microsoft Yahei","微软雅黑",Tahoma,Arial,Helvetica,STHeiti;
+    font-size: 16px;
+    height: 52px;
+    line-height: 32px;
+    outline: medium none;
+    padding: 10px;
+    position: absolute;
+    width: 164px;
+    z-index: 20;
+}
+.error-msg {
+    background: url("/img/bg/startpage-error.$4598.png") no-repeat scroll center center transparent;
+    color: #FFFFFF;
+    font-size: 14px;
+    height: 53px;
+    line-height: 53px;
+    text-align: center;
+    width: 290px;
+}
+#register-err-msg {
+    margin-left: auto;
+    margin-right: auto;
+}
+#register-wrap {
+    height: 130px;
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 765px;
+}
+#footer {
+    color: #9EA0A3;
+    font-size: 12px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+#footer a, #footer a:link, #footer a:visited {
+    color: #9EA0A3;
+    text-decoration: none;
+}
+#footer a:hover {
+    color: #8D8D8D;
+}
+.input-button {
+    background: url(../../img/account/startpage-1231.$5106.png) no-repeat scroll -400px -200px transparent;
+    border: 0 none;
+    color: #8C8C8D;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 16px;
+    height: 45px;
+    margin-top: 4px;
+    width: 96px;
+}
+.input-button:hover {
+    background-position: -400px -245px;
+}
+.input-button:active {
+    background-position: -400px -290px;
+}
+#logo {
+    background: url(../../img/account/reg-promote-logo.$5386.png) no-repeat scroll 0 0 transparent;
+    height: 59px;
+    margin: 0 auto;
+    width: 890px;
+}
+#register-for {
+    background: url(../../img/account/reg-promote-for.$5386.jpg) no-repeat scroll 0 0 transparent;
+    height: 367px;
+    margin: 20px auto;
+    width: 903px;
+}
